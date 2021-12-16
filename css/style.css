@@ -1,0 +1,470 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.container{
+    width: 1088px;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+    background-image: url(../images/Image.jpg);
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+.red_circle{
+    box-shadow: 0 3px 6px #FF00004D;
+    background-color: #FC0031;
+    height: 50px;
+    top: 100%;
+    left: 50%;
+    width: 50px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+}
+.red_circle:after{
+    content: url("../images/Icon Arrow Down.svg");
+    transform: translate(15px, 15px);
+    position: absolute;
+}
+.navBar{
+    height: 80px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+.navBar_background{
+    background: #00000066;
+    height: 80px;
+    border-bottom: 2px solid #FFFFFF33;
+}
+.navBar_logo{
+    position: relative;
+}
+.navBar_logo a{
+    font-size: 35px;
+    color: #FFFFFF;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 700;
+
+}
+.navBar_logo a span{
+    font-weight: 900;
+    color: #FF0000;
+}
+.navBar_logo::after{
+    content: url("../images/Icon Logo Normal.svg");
+    height: 35px;
+    z-index: 1;
+    position: relative;
+    top: -60px;
+    left: -50px;
+}
+.navBar_list{
+    display: flex;
+    height: 78px;
+}
+.navBar_list ul{
+    display: inline-flex;
+}
+.navBar_list li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+.navBar_list a{
+    display: flex;
+    align-items: center;
+    height: 78px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 38px;
+}
+.navBar_list a:hover{
+    position: relative;
+    z-index: 1;
+    background-color: #FFFFFF33;
+}
+.headerContent{
+    height: 807px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.siteTitle{
+    margin: 0 auto;
+    font: normal normal 900 90px/90px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-shadow: 0 3px 6px #00000040;
+    opacity: 1;
+}
+.siteSlogan{
+    margin-top: 10px;
+    text-align: center;
+    font: normal normal bold 16px/22px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.siteButton{
+    margin-top: 54px;
+    justify-content: center;
+    display: inline-flex;
+}
+.button1{
+    text-decoration: none;
+    padding: 22px 55px;
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #FF00004D;
+    border-radius: 40px;
+    text-align: center;
+    font: normal normal bold 16px/22px Nunito Sans;
+    color: #FFFFFF;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.button2{
+    text-decoration: none;
+    padding: 22px 55px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border-radius: 40px;
+    text-align: center;
+    font: normal normal bold 16px/22px Nunito Sans;
+    color: #FF0000;
+    cursor: pointer;
+}
+
+/*MAIN SECTION*/
+h3{
+    font: normal normal bold 35px/47px Nunito Sans;
+    color: #000000;
+    margin-top: 90px;
+}
+.main_tittle{
+    text-align: center;
+    position: relative;
+}
+.main_tittle::after{
+    content: "";
+    position: absolute;
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 1px 6px #FF00004D;
+    transform: translate(5px, 20px);
+    border-radius: 8px;
+    opacity: 1;
+    height: 3px;
+    width: 50px;
+}
+.main_tittle::before{
+    content: "";
+    position: absolute;
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 1px 6px #FF00004D;
+    transform: translate(-55px, 20px);
+    border-radius: 8px;
+    opacity: 1;
+    height: 3px;
+    width: 50px;
+}
+.blog{
+    display: flex;
+    justify-content: space-between;
+}
+.blog_cards{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.slogan_card{
+    text-align: left;
+    font: normal normal normal 19px/26px Nunito Sans;
+    letter-spacing: 0;
+    color: #6A6A6A;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.description_card{
+    text-align: left;
+    font: normal normal 300 14px/19px Open Sans;
+    letter-spacing: 0;
+    color: #6A6A6A;
+    margin-bottom: 15px;
+}
+.blog_cards a{
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #FF00004D;
+    border-radius: 40px;
+    opacity: 1;
+}
+.blog_cards:nth-child(2){
+    margin: 0 16px;
+}
+.blog_button{
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    padding: 10px 29px;
+    color: #FFFFFF;
+    opacity: 1;
+    width: fit-content;
+    text-decoration: none;
+}
+.service .container{
+
+}
+.bg_service{
+    background-color: #28272C;
+    width: 100%;
+    height: 643px;
+}
+h4{
+    margin-top: 0;
+    padding-top: 60px;
+    margin-bottom: 75px;
+    color: #FFFFFF;
+    font: normal normal bold 35px/47px Nunito Sans;
+}
+.service{
+    display: flex;
+    justify-content: space-around;
+}
+.service_cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service_photo_card{
+    /*margin-top: 162px;*/
+    height: 170px;
+    width: 170px;
+}
+.service_slogan_card{
+    margin: 15px 0 0 0;
+    font: normal normal normal 19px/26px Nunito Sans;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.service_description_card{
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    font: normal normal normal 14px/19px Open Sans;
+    color: #B2B2B2;
+}
+
+.service_button{
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #FF00004D;
+    border-radius: 40px;
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    color: #FFFFFF;
+    padding: 10px 29px;
+    text-decoration: none;
+}
+
+/*KONTAKT */
+h5{
+    font: normal normal bold 35px/47px Nunito Sans;
+    color: #000000;
+    margin-top: 90px;
+}
+.contact_cars{
+    display: flex;
+    justify-content: space-between;
+}
+.foto_card{
+    display: flex;
+    align-items:flex-start;
+    width: 444px;
+    height: 316px;
+    flex-grow: 1;
+}
+.contact_form{
+    width: 50%;
+    margin-bottom: 75px;
+    padding-left: 15px;
+}
+
+input {
+    display: block;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+    width: 100%;
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    color: #B2B2B2;
+    height: 38px;
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow: 0 1px 6px #FF00004D;
+    border-color: #FF0000;
+}
+textarea:focus{
+    outline: #FF0000 !important;
+    box-shadow: 0 1px 6px #FF00004D;
+    border: #FF0000;
+}
+
+#textarea{
+    display: block;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+    width: 100%;
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    color: #B2B2B2;
+    height: 140px;
+
+}
+div > label:nth-child(11){
+    display: flex;
+    text-align: left;
+    font: normal normal 300 10px/14px Open Sans;
+    padding-left: 10px;
+    color: #B2B2B2;
+}
+.checkbox__consent{
+    margin-top: 20px;
+}
+.form__checkbox{
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.form__checkbox input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+.form__checkbox input:checked ~ .checkbox{
+    background-image: url("../images/Icon Check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% ;
+}
+.form__checkbox .checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+.form__checkbox .consent__text{
+    margin: 0 30px;
+    text-align: left;
+    font-family: "Open Sans",sans-serif;
+    font-size: 10px;
+    line-height: 14px;
+    color: #B2B2B2;
+}
+
+.form_button{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+button{
+    margin-top: 20px;
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    color: #FF0000;
+    background: #FFFFFF 0 0 no-repeat;
+    box-shadow: 0 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    padding: 10px 52px;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 40px 0;
+    background: #28272C 0 0 no-repeat padding-box;
+}
+.primaryText{
+    color: #FF0000;
+}
+.footBar .footBar_left .footNav .navItem.navItem--active {
+    color: #FF0000;
+}
+.footBar .footBar_left .footNav .navItem:hover{
+    color: #FF0000;
+}
+
+.footer .footBar{
+    display: flex;
+    justify-content: space-between;
+}
+.footBar .footBar_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footBar .footBar_left .footBar_logo{
+    display: flex;
+    font: normal normal bold 25px/34px Nunito Sans;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.footBar_left .logoItem{
+    max-width: 19px;
+    margin-right: 8px;
+}
+.footBar_left .logoName{
+    margin: 0;
+}
+.footBar .footBar_left .footNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footBar .footBar_left .footNav .navItem{
+    text-align: left;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    flex: 25%;
+    margin-right: 140px;
+    display: flex;
+    align-items: center;
+    line-height: 14px;
+}
+.footerBar_right{
+    align-self: flex-end;
+}
+.footerBar_right .copyright{
+    text-align: left;
+    font: normal normal 300 12px/16px Nunito Sans;
+    color: #D1D1D1;
+    margin: 0;
+}
