@@ -1,2 +1,8 @@
 # Car_Sharing
-This is second one-page site
+
+## INFO
+sample page layout
+
+## DEMO
+
+https://arturbuja.github.io/Car_Sharing/
